@@ -18,11 +18,20 @@ window.onload = function () {
 
 function createButton(info) {
 	var button = document.createElement("button");
-	button.innerHTML = info.toString();
+	button.innerHTML = titlecase(info.toString());
+	button.className = "w3-btn-block w3-round w3-teal w3-hover-cyan w3-xlarge w3-margin-bottom";
+
 	button.onclick = function () {
 		playsound(info);
 	};
 	document.body.appendChild(button);
+}
+
+function titlecase(str) {
+	str = str.replace(/_/g, ' ');
+	return str.replace(/\w\S*/g, function (txt) {
+		return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+	});
 }
 
 
