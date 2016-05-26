@@ -1,8 +1,8 @@
 var audio = {
-	carajo: new Audio('sounds/carajo.mp4'),
-	mira_como_me_rio: new Audio('sounds/mira_como_me_rio.mp4'),
-	muscle_guard: new Audio('sounds/muscle_guard.mp4'),
-	no_es_de_tu_incunvencia: new Audio('sounds/no_es_de_tu_incunvencia.mp4'),
+	carajo: new Audio('sounds/carajo.ogg'),
+	mira_como_me_rio: new Audio('sounds/mira_como_me_rio.ogg'),
+	muscle_guard: new Audio('sounds/muscle_guard.ogg'),
+	no_es_de_tu_incunvencia: new Audio('sounds/no_es_de_tu_incunvencia.ogg'),
 };
 
 
