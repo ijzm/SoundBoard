@@ -7,6 +7,8 @@ var audio = {
 	"pacha-ay_no": new Audio('sounds/ay_no.ogg'),
 	"pacha-si_si_si": new Audio('sounds/si_si_si.ogg'),
 	"pacha-te_felicito": new Audio('sounds/te_felicito.ogg'),
+
+	"chumis-uy_si_si_si": new Audio('sounds/uy_si_si_si.ogg'),
 };
 
 
@@ -28,6 +30,10 @@ function createButton(who, info) {
 		button.className += " w3-teal"
 	} else if (who == "pacha") {
 		button.className += " w3-brown"
+	} else if (who == "chumis") {
+		button.className += " w3-green"
+	} else {
+		button.className += " w3-black"
 	}
 	button.onclick = function() {
 		playsound(who + "-" + info);
